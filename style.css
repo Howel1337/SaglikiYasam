@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 600px;
+}
+
+.hero .btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.about, .services, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    text-align: center;   /* Başlığı ortalar */
+    margin-bottom: 30px;  /* Başlık ile kutular arası boşluk */
+}
+
+.service-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;          /* Küçük ekranlarda alt satıra geçmesini sağlar */
+    justify-content: space-around; /* Kutuları eşit dağıtır */
+}
+
+.service-box {
+    flex: 1 1 250px;          /* Kutuların eşit ve esnek genişliği */
+    min-width: 220px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;       /* İçerik ortalanır */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
